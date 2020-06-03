@@ -26,4 +26,3 @@ def verify():
         totp_ = totp.TOTP(dict_["auth_vendor_id"])
         condition = totp_.verify(dict_["code"])
         return jsonify(condition)
-app.run()
